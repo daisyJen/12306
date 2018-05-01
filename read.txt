@@ -1,0 +1,5 @@
+1、首先获取验证码
+https://kyfw.12306.cn/passport/captcha/captcha-image?login_site=E&module=login&rand=sjrand&0.22285932578004175
+
+2、验证校验码
+https://kyfw.12306.cn/passport/captcha/captcha-check
