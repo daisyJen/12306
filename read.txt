@@ -1,5 +1,27 @@
-1、首先获取验证码
-https://kyfw.12306.cn/passport/captcha/captcha-image?login_site=E&module=login&rand=sjrand&0.22285932578004175
-
-2、验证校验码
-https://kyfw.12306.cn/passport/captcha/captcha-check
+说明：
+1、该功能可以自动识别12306的验证码，并进行验证。但存在一定得错误率
+2、在user.py里面填写12306的账号和密码
+3、12306.py里面需要做相应的修改：
+（1）：https://kyfw.12306.cn/otn/confirmPassenger/checkOrderInfo
+    'oldPassengerStr':'张三,1,111111111111111,1_', #姓名,1,身份证号码,1_姓名,1,身份证号码,1_
+    'passengerTicketStr':'1,0,1,张三,1,111111111111111,,N',#座位对应代码,0,1,姓名,1,身份证号码,,N_3,0,1,姓名,1,身份证号码,,N
+    ---需要改修为相应的乘客信息，具体填写方式可以通过在https://kyfw.12306.cn/otn/confirmPassenger/checkOrderInfo查看
+（2）https://kyfw.12306.cn/otn/confirmPassenger/confirmSingleForQueue
+    'oldPassengerStr':'姓名,1,身份证号码,1_',
+    'passengerTicketStr':'3,0,1,姓名,1,身份证号码,,N',
+    ---同上
+4、例子：
+请输入出发日期，例2018-05-09:2018-05-09
+请输入出发地，例上海:上海南
+请输入目的地，例北京:南充
+请输入车票类型，例成人票、学生票:成人票
+请输入车次，例G102:K351
+请输入座位类型，例商务座、一等座、二等座、硬卧、硬座等:硬座
+获取验证码..........
+验证校验码..........
+验证码校验成功
+登录..........
+登录成功
+验证通过
+查询车票..........
+下单..........

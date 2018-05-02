@@ -182,8 +182,8 @@ def buyTickets(train_date, from_station, to_station, purpose_codes,secretStr, st
         '_json_att': '',
         'bed_level_order_num':'000000000000000000000000000000',
         'cancel_flag':2,
-        'oldPassengerStr':'任琴,1,511322199009152585,1_', #任琴,1,511322199009152585,1_冯代清,1,512924196402122166,1_
-        'passengerTicketStr':'1,0,1,任琴,1,511322199009152585,,N',#3,0,1,任琴,1,511322199009152585,,N_3,0,1,冯代清,1,512924196402122166,,N
+        'oldPassengerStr':'张三,1,111111111111111,1_', #姓名,1,身份证号码,1_姓名,1,身份证号码,1_
+        'passengerTicketStr':'1,0,1,张三,1,111111111111111,,N',#座位对应代码,0,1,姓名,1,身份证号码,,N_3,0,1,姓名,1,身份证号码,,N
         'randCode':'',
         'REPEAT_SUBMIT_TOKEN':globalRepeatSubmitToken,
         'tour_flag':'dc',
@@ -224,8 +224,8 @@ def buyTickets(train_date, from_station, to_station, purpose_codes,secretStr, st
         'dwAll':'N',
         'key_check_isChange':key_check_isChange,
         'leftTicketStr':leftTicketStr,
-        'oldPassengerStr':'任琴,1,511322199009152585,1_',
-        'passengerTicketStr':'3,0,1,任琴,1,511322199009152585,,N',
+        'oldPassengerStr':'姓名,1,身份证号码,1_',
+        'passengerTicketStr':'3,0,1,姓名,1,身份证号码,,N',
         'purpose_codes':'00',
         'randCode':'',
         'REPEAT_SUBMIT_TOKEN':globalRepeatSubmitToken,
